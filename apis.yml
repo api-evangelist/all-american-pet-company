@@ -1,23 +1,47 @@
 aid: all-american-pet-company
+
 name: All American Pet Company
-description: 'All American Pet Company is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'All American Pet Company operates a local pet food and supply store serving the Springfield and Eugene areas in Oregon. It offers a wide range of products for dogs and cats, including frozen raw dog food, freeze-dried options, premium kibbles, natural cat food, and nutritional supplements. The store focuses on healthy pet nutrition and aims to provide convenient online ordering and local pickup for pet owners.'
+
 url: https://raw.githubusercontent.com/api-evangelist/all-american-pet-company/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-24'
+
 modified: '2026-09-24'
+
 tags:
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/all-american-pet-company-hosts.yml
+- type: Vendors
+  url: vendors/all-american-pet-company-vendors.yml
+- type: DomainSecurity
+  url: security/all-american-pet-company-domain-security.yml
 - type: Website
   url: https://www.nasdaqprivatemarket.com/
+
+apis: []
+x-enrichment:
+  date: '2026-09-24'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
